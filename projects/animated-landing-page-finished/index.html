@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="./img/rhino.jpg" as="image" />
+    <link rel="preload" href="./img/zebra.jpg" as="image" />
+    <link rel="preload" href="./img/lion.jpg" as="image" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="index.js" defer></script>
+    <title>Animated landing page with animals</title>
+  </head>
+
+  <body>
+    <main class="content">
+
+      <div class="grid-container">
+        <div class="left">
+           <nav class="jumbo-nav">
+              <a class="jumbo-nav__item jumbo-nav__item--active" data-index="0" id="rhino">Rhino</a>
+              <a class="jumbo-nav__item" data-index="1" id="zebra">Zebra</a>
+              <a class="jumbo-nav__item" data-index="2" id="lion">Lion</a>
+           </nav>
+        </div>
+        <div class="right">
+          <!-- Rhino -->
+          <article class="article" data-index="0">
+            <h1 class="article-title">The ancient colossus</h1>
+            <p class="article-paragraph">
+              Rhinos, short for rhinoceroses, are large, herbivorous mammals
+              known for their distinctive horns and thick skin. These
+              majestic creatures are found in Africa and Asia, with five
+              species: the white, black, Indian, Javan, and Sumatran rhinos.
+              Each species has unique characteristics and habitats, ranging
+              from savannas and grasslands to dense tropical forests.
+            </p>
+            <p class="article-paragraph">
+              Despite their formidable size and strength, rhinos are
+              surprisingly agile, capable of running at impressive speeds
+              when threatened. Their horns, made of keratin, are used for
+              defense, digging for water, and breaking branches for food.
+            </p>
+          </article>
+
+          <!-- Zebra -->
+          <article class="article hidden" data-index="1">
+            <h1 class="article-title">
+              The Guardians of the African Grasslands
+            </h1>
+            <p class="article-paragraph">
+              Zebras are distinctive members of the equid family, known for
+              their unique black-and-white striped coats. Native to Africa,
+              zebras primarily inhabit savannas, grasslands, and mountainous
+              regions. Their stripes serve multiple purposes, including
+              camouflage, confusing predators, and regulating body
+              temperature. Each zebra's stripe pattern is unique, much like
+              human fingerprints
+            </p>
+            <p class="article-paragraph">
+              Despite their adaptability, zebras face several threats,
+              including habitat loss, hunting, and competition with
+              livestock for resources. The conversion of their natural
+              habitats into agricultural land reduces their grazing areas
+              and water sources.
+            </p>
+          </article>
+
+          <!-- Lion -->
+          <article class="article hidden" data-index="2">
+            <h1 class="article-title">The king of the jungle</h1>
+            <p class="article-paragraph">
+              Lions, known as the "king of the jungle," are majestic big
+              cats native to Africa and parts of Asia. These social animals
+              are unique among big cats for their pride-based structure,
+              with groups typically consisting of several females, their
+              cubs, and a few males. Male lions are recognizable by their
+              impressive manes, which can vary in color from blond to black
+              and symbolize strength and dominance.
+            </p>
+            <p class="article-paragraph">
+              Despite their iconic status, lions face significant threats in
+              the wild, primarily due to habitat loss, human-wildlife
+              conflict, and poaching. The reduction of their natural
+              habitats to agriculture and urban development has led to
+              decreased prey availability and increased encounters with
+              humans.
+            </p>
+          </article>
+        </div>
+
+      </div>
+    </main>
+  </body>
+</html>
