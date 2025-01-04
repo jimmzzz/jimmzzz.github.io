@@ -1,0 +1,42 @@
+:root {
+  --bg-color: #111827;
+  --gradient-bg-size: 400%;
+  --gradient-color-one: hsla(182, 64%, 53%, 1);
+  --gradient-color-two: hsla(34, 98%, 50%, 1);
+  --gradient-color-three: hsla(323, 100%, 47%, 1);
+  --gradient-animation-duration: 12s;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  display: grid;
+  place-items: center;
+  background: var(--bg-color);
+  height: 100vh;
+}
+
+.gradient-text {
+  font-size: 8rem;
+  max-width: 80%;
+  line-height: 120%;
+  font-weight: 800;
+  padding: 1rem 4rem;
+  background: linear-gradient(
+      to right,
+      var(--gradient-color-one),
+      var(--gradient-color-two),
+      var(--gradient-color-three),
+      var(--gradient-color-two),
+      var(--gradient-color-one)
+    )
+    0 0 / var(--gradient-bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  animation: move-bg var(--gradient-animation-duration) infinite linear;
+}
+
+@keyframes move-bg {
+    to {
+      background-position: var(--gradient-bg-size) 0;
+    }
+}
